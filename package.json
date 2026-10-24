@@ -1,0 +1,22 @@
+{
+  "name": "characterverse",
+  "version": "1.0.0",
+  "description": "CharacterVerse - AI-powered storytelling platform for BookTok readers, writers, and novel enthusiasts using Fish Audio",
+  "scripts": {
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build:client": "npm run build --prefix client",
+    "start": "npm start --prefix server"
+  },
+  "keywords": [
+    "fish-audio",
+    "storytelling",
+    "audiobooks",
+    "booktok",
+    "tts",
+    "react",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT"
+}

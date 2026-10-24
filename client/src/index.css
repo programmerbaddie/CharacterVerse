@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #FAF7F2;
+    background-image: radial-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+}
+
+/* Glassmorphism customized for warm library & dark parchment tones */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.glass-panel-dark {
+  background: rgba(28, 21, 18, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+/* Custom warm parchment scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3EDE2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBB9A0;
+  border-radius: 9999px;
+  border: 2px solid #F3EDE2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9B7E58;
+}
+
+/* Interactive transcript active word / sentence glow */
+.transcript-active-segment {
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.22) 0%, rgba(212, 175, 55, 0.08) 100%);
+  border-left: 3px solid #D4AF37;
+  padding-left: 0.5rem;
+  border-radius: 0.25rem;
+  transition: all 0.25s ease-in-out;
+}
